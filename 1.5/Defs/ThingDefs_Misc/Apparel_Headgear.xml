@@ -9,7 +9,7 @@
         <li>Armor</li>
     </tradeTags>
     <statBases Inherit="False">
-      <WorkToMake>2000</WorkToMake>
+      <WorkToMake>21000</WorkToMake>
       <MaxHitPoints>150</MaxHitPoints>
       <Mass>1.2</Mass>
       <Flammability>0.2</Flammability>
@@ -21,9 +21,9 @@
       <EquipDelay>5</EquipDelay>
     </statBases>
     <costList>
-      <Steel>20</Steel>
+      <Uranium>10</Uranium>
       <ComponentSpacer>1</ComponentSpacer>
-      <Plasteel>15</Plasteel>
+      <Plasteel>30</Plasteel>
     </costList>
     <equippedStatOffsets>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
