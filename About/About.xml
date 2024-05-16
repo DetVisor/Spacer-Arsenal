@@ -13,13 +13,6 @@
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 		<li>smartkar.athenaframework</li>
 	</loadAfter>
-	<modDependencies>
-		<li>
-		 <packageId>smartkar.athenaframework</packageId>
-		 <displayName>Athena Framework</displayName>
-		 <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2903359518</steamWorkshopUrl>
-		</li>
-	</modDependencies>
 	<packageId>det.spacerarsenal</packageId>
 	<description>Wield a mighty arsenal of weapons crafted and designed in the forges of powerful space empires and influential militias, Spacer Arsenal adds a bunch of individual spacer level weapons to spice up your late game.</description>
 </ModMetaData>
