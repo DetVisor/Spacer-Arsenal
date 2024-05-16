@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Spacer Arsenal</name>
+	<author>DetVisor</author>
+	<supportedVersions>
+		<li>1.5</li>
+	</supportedVersions>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>brrainz.harmony</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>smartkar.athenaframework</li>
+	</loadAfter>
+	<modDependencies>
+		<li>
+		 <packageId>smartkar.athenaframework</packageId>
+		 <displayName>Athena Framework</displayName>
+		 <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2903359518</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<packageId>det.spacerarsenal</packageId>
+	<description>Wield a mighty arsenal of weapons crafted and designed in the forges of powerful space empires and influential militias, Spacer Arsenal adds a bunch of individual spacer level weapons to spice up your late game.</description>
+</ModMetaData>

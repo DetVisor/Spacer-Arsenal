@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <SoundDef>
+    <defName>DV_Shot_SonicStunner</defName>  
+    <context>MapOnly</context>  
+	<maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/DV_Shot_SonicStunner</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>23~25</volumeRange>
+		<pitchRange>0.6~0.7</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>DV_Shot_PhotonSMG</defName>  
+    <context>MapOnly</context>  
+	<maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/DV_Shot_PhotonSMG</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>22~25</volumeRange>
+		<pitchRange>0.6~0.8</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>DV_Shot_PlasmaBlaster</defName>  
+    <context>MapOnly</context>  
+	<maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/DV_Shot_PlasmaBlaster</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>22~29</volumeRange>
+		<pitchRange>0.6~0.7</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>
+  

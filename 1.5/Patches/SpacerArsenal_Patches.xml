@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>       
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ResearchProjectDef[defName="ChargedShot"]/label</xpath>
+    <value>
+        <label>Spacer war solutions</label>
+    </value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/ResearchProjectDef[defName="ChargedShot"]/description</xpath>
+    <value>
+        <description>Build an arsenal of advanced spacer weapons used throughout the galaxy by militias, navies and ultratech starforces. Note that these also require advanced components.</description>
+    </value>
+</Operation>
+
+</Patch>

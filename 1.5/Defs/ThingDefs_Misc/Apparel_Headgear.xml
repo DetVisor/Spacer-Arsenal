@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="ApparelArmorHelmetPowerBase">
+    <defName>DV_Apparel_CommodoreHelmet</defName>
+    <label>ensign helmet</label>
+    <description>A fully enclosed powered helmet equipped with a miniaturized life support system widely used by space-faring soldiers. Thin layered plasteel plates are woven into flexible heat shields to offer both protection from conventional weapons and protection from the heat, meanwhile the built-in breathing apparatus offers protection from airborne toxins</description>
+    <tradeTags>
+        <li>Armor</li>
+    </tradeTags>
+    <statBases Inherit="False">
+      <WorkToMake>2000</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>1.2</Mass>
+      <Flammability>0.2</Flammability>
+      <ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.95</ArmorRating_Heat>
+      <Insulation_Cold>8</Insulation_Cold>
+      <Insulation_Heat>4</Insulation_Heat>
+      <EquipDelay>5</EquipDelay>
+    </statBases>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentSpacer>1</ComponentSpacer>
+      <Plasteel>15</Plasteel>
+    </costList>
+    <equippedStatOffsets>
+      <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+    </equippedStatOffsets>
+
+    <graphicData>
+        <texPath>Things/Pawn/Humanlike/Apparel/CommodoreHelmet/CommodoreHelmet</texPath>
+        <shaderType>CutoutComplex</shaderType>
+        <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <apparel Inherit="False">
+        <bodyPartGroups>
+          <li>FullHead</li>
+        </bodyPartGroups>
+        <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CommodoreHelmet/CommodoreHelmet</wornGraphicPath>
+        <useWornGraphicMask>true</useWornGraphicMask>
+        <layers>
+          <li>Overhead</li>
+        </layers>
+        <defaultOutfitTags>
+          <li>Soldier</li>
+        </defaultOutfitTags>
+        <tags>
+          <li>SpacerMilitary</li>
+          <li>EVA</li>
+        </tags>
+        <useDeflectMetalEffect>true</useDeflectMetalEffect>
+        <immuneToToxGasExposure>true</immuneToToxGasExposure>
+      </apparel>
+
+    <recipeMaker>
+      <researchPrerequisite Inherit="False">PoweredArmor</researchPrerequisite>
+      <displayPriority>100</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

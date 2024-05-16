@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DamageDef Name="SonicStun">
+    <defName>DV_SonicStun</defName>
+    <label>stun</label>
+    <workerClass>DamageWorker_Stun</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been stunned to death.</deathMessage>
+    <defaultDamage>20</defaultDamage>
+    <explosionCellFleck>BlastDry</explosionCellFleck>
+    <soundExplosion>Explosion_Stun</soundExplosion>
+    <combatLogRules>Damage_Stun</combatLogRules>
+    <harmsHealth>false</harmsHealth>
+    <makesBlood>false</makesBlood>
+    <causeStun>true</causeStun>
+    <hasForcefulImpact>False</hasForcefulImpact>
+  </DamageDef>
+
+<DamageDef>
+    <defName>DV_PlasmaDamage</defName>
+    <label>plasma shot</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been killed by plasma.</deathMessage>
+    <hediff>Burn</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Electric</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <hasForcefulImpact>true</hasForcefulImpact>
+    <makesBlood>false</makesBlood>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+  </DamageDef>
+
+  <DamageDef>
+    <defName>DV_PhotonDamage</defName>
+    <label>photon blast</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been killed by photon blasts.</deathMessage>
+    <hediff>Burn</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Electric</impactSoundType>
+    <armorCategory>Heat</armorCategory>
+    <hasForcefulImpact>true</hasForcefulImpact>
+    <makesBlood>false</makesBlood>
+    <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+  </DamageDef>
+
+</Defs>
