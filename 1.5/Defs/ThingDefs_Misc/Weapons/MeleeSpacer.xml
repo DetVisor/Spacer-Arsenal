@@ -5,10 +5,13 @@
         <defName>DV_MeleeWeapon_SparkSabre</defName>
         <label>sparksabre</label>
         <description>An electrically charged plasteel-alloy cutlass. It's swift to swing and it's large blade easily slices flesh and cloth. Prolonged contact allows the blade to deliver shocks into targets which disrupts the nervous system, stunning them.</description>
-        <soundInteract>Interact_MonoSword</soundInteract>
-        <meleeHitSound>MeleeHit_MonoSword</meleeHitSound>
+        <soundInteract>Interact_ChargeLance</soundInteract>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <smeltable>false</smeltable>
+        <statBases>
+          <WorkToMake>18000</WorkToMake>
+          <Mass>3</Mass>
+        </statBases>
         <weaponClasses>
           <li>MeleePiercer</li>
         </weaponClasses>
