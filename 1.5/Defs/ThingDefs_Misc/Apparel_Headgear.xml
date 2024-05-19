@@ -13,20 +13,21 @@
       <MaxHitPoints>150</MaxHitPoints>
       <Mass>1.2</Mass>
       <Flammability>0.2</Flammability>
-      <ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+      <ArmorRating_Sharp>0.86</ArmorRating_Sharp>
       <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.95</ArmorRating_Heat>
-      <Insulation_Cold>14</Insulation_Cold>
-      <Insulation_Heat>-2</Insulation_Heat>
-      <EquipDelay>5</EquipDelay>
+      <ArmorRating_Heat>0.86</ArmorRating_Heat>
+      <Insulation_Cold>12</Insulation_Cold>
+      <Insulation_Heat>-5</Insulation_Heat>
+      <EquipDelay>8</EquipDelay>
     </statBases>
     <costList>
-      <Uranium>10</Uranium>
-      <ComponentSpacer>1</ComponentSpacer>
+      <Uranium>15</Uranium>
+      <ComponentSpacer>2</ComponentSpacer>
       <Plasteel>30</Plasteel>
     </costList>
     <equippedStatOffsets>
       <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+      <MentalBreakThreshold>-0.1</MentalBreakThreshold>
       <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
       <DecompressionResistance MayRequire="kentington.saveourship2">0.25</DecompressionResistance>
     </equippedStatOffsets>
@@ -64,7 +65,7 @@
       </comps>
 
     <recipeMaker>
-      <researchPrerequisite Inherit="False">PoweredArmor</researchPrerequisite>
+      <researchPrerequisite Inherit="False">DV_EnsignArmor</researchPrerequisite>
       <displayPriority>100</displayPriority>
     </recipeMaker>
   </ThingDef>

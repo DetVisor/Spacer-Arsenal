@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+        <defName>DV_MeleeWeapon_SparkSabre</defName>
+        <label>sparksabre</label>
+        <description>An electrically charged plasteel-alloy cutlass. It's swift to swing and it's large blade easily slices flesh and cloth. Prolonged contact allows the blade to deliver shocks into targets which disrupts the nervous system, stunning them.</description>
+        <soundInteract>Interact_MonoSword</soundInteract>
+        <meleeHitSound>MeleeHit_MonoSword</meleeHitSound>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <smeltable>false</smeltable>
+        <weaponClasses>
+          <li>MeleePiercer</li>
+        </weaponClasses>
+        <graphicData>
+          <texPath>Things/Item/Equipment/WeaponMelee/Sparksabre</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <recipeMaker>
+          <researchPrerequisite>ChargedShot</researchPrerequisite>
+          <skillRequirements>
+            <Crafting>7</Crafting>
+          </skillRequirements>
+          <recipeUsers Inherit="False">
+            <li>FabricationBench</li>
+          </recipeUsers>
+          <displayPriority>200</displayPriority>
+        </recipeMaker>
+        <costList>
+          <Plasteel>12</Plasteel>
+          <Steel>20</Steel>
+          <ComponentSpacer>2</ComponentSpacer>
+        </costList>
+        <thingSetMakerTags>
+          <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <tools>
+          <li>
+            <label>handle</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>10</power>
+            <cooldownTime>1.8</cooldownTime>
+          </li>
+          <li>
+            <label>point</label>
+            <capacities>
+              <li>Stab</li>
+            </capacities>
+            <power>24</power>
+            <cooldownTime>1.8</cooldownTime>
+            <armorPenetration>0.25</armorPenetration>
+            <extraMeleeDamages>
+                <li>
+                  <def>Stun</def>
+                  <amount>10</amount>
+                  <chance>0.4</chance>
+                </li>
+            </extraMeleeDamages>
+          </li>
+          <li>
+            <label>edge</label>
+            <capacities>
+              <li>Cut</li>
+            </capacities>
+            <power>24</power>
+            <cooldownTime>1.9</cooldownTime>
+            <armorPenetration>0.2</armorPenetration>
+            <extraMeleeDamages>
+                <li>
+                  <def>Stun</def>
+                  <amount>10</amount>
+                  <chance>0.4</chance>
+                </li>
+            </extraMeleeDamages>
+          </li>
+        </tools>
+      </ThingDef>
+
+</Defs>
