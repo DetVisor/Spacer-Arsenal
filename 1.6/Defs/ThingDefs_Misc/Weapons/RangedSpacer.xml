@@ -14,7 +14,6 @@
       <stoppingPower>2</stoppingPower>
       <speed>130</speed>
       <armorPenetrationBase>0.12</armorPenetrationBase>
-      <bulletChanceToStartFire>0.2</bulletChanceToStartFire>
     </projectile>
   </ThingDef>
 
@@ -29,9 +28,8 @@
     <projectile>
       <explosionRadius>2.4</explosionRadius >
       <damageDef>DV_PlasmaVaporize</damageDef>
-      <!-- Use default damage from explosion def -->
-      <explosionDelay>80</explosionDelay>
-      <bulletChanceToStartFire>1</bulletChanceToStartFire>      
+      <explosionChanceToStartFire>1</explosionChanceToStartFire>
+      <explosionDelay>80</explosionDelay>  
       <ai_IsIncendiary>true</ai_IsIncendiary>
     </projectile>
   </ThingDef>
@@ -129,7 +127,6 @@
       <stoppingPower>0.2</stoppingPower>
       <armorPenetrationBase>-0.20</armorPenetrationBase>
       <speed>78</speed>
-      <bulletChanceToStartFire>0.1</bulletChanceToStartFire>
     </projectile>
   </ThingDef>
 
@@ -143,7 +140,7 @@
     </graphicData>
     <projectile>
       <damageDef>DV_NeutronDamage</damageDef>
-      <damageAmountBase>6</damageAmountBase>
+      <damageAmountBase>7</damageAmountBase>
       <stoppingPower>0.32</stoppingPower>
       <speed>80</speed>
       <armorPenetrationBase>0.2</armorPenetrationBase>
@@ -162,7 +159,6 @@
       <damageDef>DV_PlasmaDamage</damageDef>
       <damageAmountBase>12</damageAmountBase>
       <speed>72</speed>
-      <bulletChanceToStartFire>0.5</bulletChanceToStartFire>
     </projectile>
   </ThingDef>
 
@@ -415,7 +411,7 @@
     <costList>
       <Plasteel>90</Plasteel>
       <Steel>55</Steel>
-      <ComponentSpacer>4</ComponentSpacer>
+      <ComponentSpacer>5</ComponentSpacer>
     </costList>
     <recipeMaker>
       <researchPrerequisite>ChargedShot</researchPrerequisite>

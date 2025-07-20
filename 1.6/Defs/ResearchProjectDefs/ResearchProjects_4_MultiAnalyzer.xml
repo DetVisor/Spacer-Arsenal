@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ResearchProjectDef>
+    <defName>DV_EnsignArmor</defName>
+    <label>ensign armor</label>
+    <description>Build ensign armor, a specialized fully-sealed powered armor suit used by space-faring soldiers. Note that these also require advanced components.</description>
+    <baseCost>6300</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>ReconArmor</li>
+    </prerequisites>
+    <hiddenPrerequisites>
+      <li>ComplexClothing</li>
+    </hiddenPrerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  <researchViewX>18.00</researchViewX>
+  <researchViewY>0.20</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->ensign armor</li>
+
+        <li>subject_story->survived stranded upon a frigid snow planet, with only their armor</li>
+        <li>subject_story->fought off a horde of deadly insectoids alone wearing their armor</li>
+        <li>subject_story->boarded a pirate's vessel and breached through door after door before finally killing the pirate captain, taking over the vessel</li>
+
+        <li>subject_gerund->constructing space-soldier armor</li>
+        <li>subject_gerund->constructing ensign armor</li>
+        <li>subject_gerund->constructing specialized enviromentally-sealed armor</li>
+
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+
+</Defs>

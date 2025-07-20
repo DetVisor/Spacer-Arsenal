@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="ApparelArmorHelmetPowerBase">
+    <defName>DV_Apparel_EnsignHelmet</defName>
+    <label>ensign helmet</label>
+    <description>A fully enclosed powered helmet equipped with a miniaturized life support system widely used by space-faring soldiers. Thin layered plasteel plates are woven into flexible heat shields to offer both protection from conventional weapons and protection from the heat, meanwhile the built-in breathing apparatus offers protection from airborne toxins</description>
+    <tradeTags>
+        <li>Armor</li>
+    </tradeTags>
+    <statBases Inherit="False">
+      <WorkToMake>21000</WorkToMake>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>1.2</Mass>
+      <Flammability>0.2</Flammability>
+      <ArmorRating_Sharp>0.86</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.86</ArmorRating_Heat>
+      <Insulation_Cold>8</Insulation_Cold>
+      <Insulation_Heat>2</Insulation_Heat>
+      <EquipDelay>8</EquipDelay>
+    </statBases>
+    <costList>
+      <Uranium>15</Uranium>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Plasteel>30</Plasteel>
+    </costList>
+    <equippedStatOffsets>
+      <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+      <MentalBreakThreshold>-0.1</MentalBreakThreshold>
+      <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+      <DecompressionResistance MayRequire="kentington.saveourship2">0.25</DecompressionResistance>
+      <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.69</VacuumResistance>
+    </equippedStatOffsets>
+
+    <graphicData>
+        <texPath>Things/Pawn/Humanlike/Apparel/CommodoreHelmet/CommodoreHelmet</texPath>
+        <shaderType>CutoutComplex</shaderType>
+        <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <apparel Inherit="False">
+        <bodyPartGroups>
+          <li>FullHead</li>
+        </bodyPartGroups>
+        <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CommodoreHelmet/CommodoreHelmet</wornGraphicPath>
+        <useWornGraphicMask>true</useWornGraphicMask>
+        <layers>
+          <li>Overhead</li>
+        </layers>
+        <defaultOutfitTags>
+          <li>Soldier</li>
+          <li>Spacefarer</li>
+        </defaultOutfitTags>
+        <tags>
+          <li>SpacerMilitary</li>
+          <li>EVA</li>
+        </tags>
+        <useDeflectMetalEffect>true</useDeflectMetalEffect>
+        <immuneToToxGasExposure>true</immuneToToxGasExposure>
+      </apparel>
+
+      <comps>
+        <li MayRequire="kentington.saveourship2">
+          <compClass>SaveOurShip2.CompEVA</compClass>
+        </li>
+      </comps>
+
+    <recipeMaker>
+      <researchPrerequisite Inherit="False">DV_EnsignArmor</researchPrerequisite>
+      <displayPriority>100</displayPriority>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

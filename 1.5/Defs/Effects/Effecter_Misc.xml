@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>DV_Fleck_PlasmaGlow</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fleckSystemClass>FleckSystemThrown</fleckSystemClass>
+    <fadeInTime>0.1</fadeInTime>
+    <fadeOutTime>0.3</fadeOutTime>
+    <solidTime>0.3</solidTime>
+    <growthRate>1.6</growthRate>
+    <graphicData>
+      <texPath>Things/Mote/VaporizeExplosionGlow</texPath>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>(4.5, 4.5)</drawSize>
+    </graphicData>
+  </FleckDef>
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>DV_Fleck_PlasmaDiffusion</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.1</fadeInTime>
+    <fadeOutTime>0.3</fadeOutTime>
+    <solidTime>0.2</solidTime>
+    <growthRate>1.1</growthRate>
+    <graphicData>
+      <texPath>Things/Mote/HeatDiffusion</texPath>
+      <graphicClass>Graphic_FleckPulse</graphicClass>
+      <color>(231, 111, 48)</color>
+      <shaderType>MoteHeatDiffusion</shaderType>
+      <shaderParameters>
+        <_MultiplyTex>/Things/Mote/RadiationDistortion_A</_MultiplyTex>
+        <_texBScale>0.2</_texBScale>
+        <_texBScrollSpeed>-0.5</_texBScrollSpeed>
+        <_Intensity>13</_Intensity>
+        <_Clip>0</_Clip>
+      </shaderParameters>
+      <drawSize>(6, 6)</drawSize>
+    </graphicData>
+  </FleckDef>
+  
+  <EffecterDef>
+    <defName>DV_PlasmaVaporize_Heatwave</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <fleckDef>Fleck_HeatWaveDistortion</fleckDef>
+        <burstCount>1</burstCount>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <fleckDef>DV_Fleck_PlasmaDiffusion</fleckDef>
+        <burstCount>1</burstCount>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <fleckDef>DV_Fleck_PlasmaGlow</fleckDef>
+        <burstCount>1</burstCount>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <fleckDef>Fleck_VaporizeCenterFlash</fleckDef>
+        <burstCount>1</burstCount>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+    </children>
+  </EffecterDef>
+</Defs>
+  

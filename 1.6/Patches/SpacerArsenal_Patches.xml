@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="ChargedShot"]/label</xpath>
+        <value>
+            <label>Spacer war solutions</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ResearchProjectDef[defName="ChargedShot"]/description</xpath>
+        <value>
+            <description>Build an arsenal of advanced spacer weapons used throughout the galaxy by militias, navies and ultratech starforces. Note that these also require advanced components.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Det's Xenotypes - Venators</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <order>Append</order>
+                    <value>
+                        <ThingDef MayRequire="ebsg.framework" ParentName="DV_LongrifleBase">
+                            <defName>DV_Gun_LaserpulseLongrifle</defName>
+                            <label>laserpulse longrifle</label>
+                            <description>A high tech long-range laser rifle. Photons are channeled through various gain mediums, forming a cascade of light particles that are focused into a single bolt. The long range scope is only compatible with the eyes of people with the farsighted gene, and it allows the wielder to fire at extremely long ranges.n\n\Due to the weapon's sheer size and weight, it is slow to aim and hard to move with when equipped.n\n\Far less common than the cartridge based precision longrifle, the laserpulse longrifle is often utilized by spaceborn venators hunting in zero-g environments.</description>
+                            <possessionCount>1</possessionCount>
+                            <graphicData Inherit="False">
+                                <texPath>Things/Item/Equipment/WeaponRanged/LaserPulseLongrifle</texPath>
+                                <graphicClass>Graphic_Single</graphicClass>
+                                <drawSize>1.2</drawSize>
+                            </graphicData>
+                            <weaponTags>
+                                <li>Longrifle</li>
+                            </weaponTags>
+                            <equippedStatOffsets Inherit="False">
+                                <MoveSpeed>-0.25</MoveSpeed>
+                            </equippedStatOffsets>
+                            <soundInteract>Interact_Rifle</soundInteract>
+                            <recipeMaker>
+                                <researchPrerequisite>ChargedShot</researchPrerequisite>
+                                <skillRequirements>
+                                    <Crafting>8</Crafting>
+                                </skillRequirements>
+                                <displayPriority>425</displayPriority>
+                            </recipeMaker>
+                            <thingSetMakerTags>
+                                <li>RewardStandardQualitySuper</li>
+                            </thingSetMakerTags>
+                            <statBases>
+                                <WorkToMake>62000</WorkToMake>
+                                <Mass>8.3</Mass>
+                                <AccuracyTouch>0.40</AccuracyTouch>
+                                <AccuracyShort>0.56</AccuracyShort>
+                                <AccuracyMedium>0.83</AccuracyMedium>
+                                <AccuracyLong>0.89</AccuracyLong>
+                                <RangedWeapon_Cooldown>3.1</RangedWeapon_Cooldown>
+                            </statBases>
+                            <costList>
+                                <Plasteel>70</Plasteel>
+                                <Uranium>30</Uranium>
+                                <ComponentSpacer>4</ComponentSpacer>
+                            </costList>
+                            <verbs Inherit="False">
+                                <li>
+                                    <verbClass>Verb_Shoot</verbClass>
+                                    <hasStandardCommand>true</hasStandardCommand>
+                                    <defaultProjectile>DV_Bullet_Laserpulse</defaultProjectile>
+                                    <warmupTime>3.4</warmupTime>
+                                    <range>80.9</range>
+                                    <soundCast>DV_Shot_PhotonSMG</soundCast>
+                                    <soundCastTail>GunTail_Heavy</soundCastTail>
+                                    <muzzleFlashScale>9</muzzleFlashScale>
+                                </li>
+                            </verbs>
+                            <tools>
+                                <li>
+                                    <label>stock</label>
+                                    <capacities>
+                                        <li>Blunt</li>
+                                    </capacities>
+                                    <power>9</power>
+                                    <cooldownTime>2</cooldownTime>
+                                </li>
+                                <li>
+                                    <label>barrel</label>
+                                    <capacities>
+                                        <li>Blunt</li>
+                                        <li>Poke</li>
+                                    </capacities>
+                                    <power>9</power>
+                                    <cooldownTime>2</cooldownTime>
+                                </li>
+                            </tools>
+                        </ThingDef>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

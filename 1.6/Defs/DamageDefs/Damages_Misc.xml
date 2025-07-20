@@ -32,6 +32,15 @@
     <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
     <isRanged>true</isRanged>
     <makesAnimalsFlee>true</makesAnimalsFlee>
+    <igniteChanceByTargetFlammability>
+      <points>
+        <li>(0, 0)</li>
+        <li>(0.2, 0.2)</li>
+        <li>(0.5, 0.4)</li>
+        <li>(1, 0.7)</li>
+      </points>
+    </igniteChanceByTargetFlammability>
+    <igniteCellChance>0.5</igniteCellChance>
   </DamageDef>
 
   <DamageDef>
@@ -49,6 +58,14 @@
     <overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
     <isRanged>true</isRanged>
     <makesAnimalsFlee>true</makesAnimalsFlee>
+    <igniteChanceByTargetFlammability>
+      <points>
+        <li>(0, 0)</li>
+        <li>(0.5, 0.1)</li>
+        <li>(1, 0.2)</li>
+      </points>
+    </igniteChanceByTargetFlammability>
+    <igniteCellChance>0.1</igniteCellChance>
   </DamageDef>
 
   <DamageDef>
