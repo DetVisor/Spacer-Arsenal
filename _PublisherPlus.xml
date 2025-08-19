@@ -7,6 +7,7 @@
     <exclude>About\img3.png</exclude>
     <exclude>About\img4.png</exclude>
     <exclude>About\img5.png</exclude>
+    <exclude>About\imgnew.png</exclude>
     <exclude>Previews</exclude>
   </Excluded>
 </Configuration>
