@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef MayRequire="Ludeon.RimWorld.Odyssey" ParentName="DV_Gun_BruteRifle">
+        <defName>DV_Gun_BruteRifle_Unique</defName>
+        <label>unique brute rifle</label>
+        <description>A brute rifle with customized parts.</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/UniqueWeapons/BruteRifle</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.2</drawSize>
+        </graphicData>
+        <comps Inherit="False">
+            <li Class="CompProperties_EquippableAbilityReloadable" />
+            <!-- Props are populated by traits -->
+            <li Class="CompProperties_Forbiddable"/>
+            <li Class="CompProperties_Styleable"/>
+            <li Class="CompProperties_Biocodable"/>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+            <li Class="CompProperties_Art">
+                <nameMaker>NamerArtWeaponGun</nameMaker>
+                <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+                <minQualityForArtistic>Excellent</minQualityForArtistic>
+            </li>
+            <li Class="CompProperties_UniqueWeapon">
+                <weaponCategories>
+                    <li>Ranged</li>
+                    <li>BulletFiring</li>
+                    <li>Gun</li>
+                    <li>Pistol</li>
+                    <li>Sighted</li>
+                </weaponCategories>
+                <namerLabels>
+                    <li>brute</li>
+                    <li>brute rifle</li>
+                    <li>wrist-breaker</li>
+                    <li>slammer</li>
+                    <li>giant</li>
+                    <li>skullcrusher</li>
+                    <li>gutpunch</li>
+                    <li>big boy</li>
+                </namerLabels>
+            </li>
+        </comps>
+        <generateAllowChance>0</generateAllowChance>
+        <possessionCount>0</possessionCount>
+        <tradeability>Sellable</tradeability>
+        <thingSetMakerTags Inherit="False">
+            <li>RewardStandardLowFreq</li>
+            <li>UniqueWeapon</li>
+        </thingSetMakerTags>
+        <recipeMaker Inherit="False" IsNull="True" />
+        <thingCategories Inherit="False">
+            <li>WeaponsUnique</li>
+        </thingCategories>
+        <descriptionHyperlinks>
+            <ThingDef>DV_Gun_BruteRifle</ThingDef>
+        </descriptionHyperlinks>
+    </ThingDef>
+
+    <ThingDef MayRequire="Ludeon.RimWorld.Odyssey" ParentName="DV_Gun_PhotonSMG">
+        <defName>DV_Gun_PhotonSMG_Unique</defName>
+        <label>unique photon SMG</label>
+        <description>A photon SMG with customized parts.</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/UniqueWeapons/PhotonSMG</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <comps Inherit="False">
+            <li Class="CompProperties_EquippableAbilityReloadable" />
+            <!-- Props are populated by traits -->
+            <li Class="CompProperties_Forbiddable"/>
+            <li Class="CompProperties_Styleable"/>
+            <li Class="CompProperties_Biocodable"/>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+            <li Class="CompProperties_Art">
+                <nameMaker>NamerArtWeaponGun</nameMaker>
+                <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+                <minQualityForArtistic>Excellent</minQualityForArtistic>
+            </li>
+            <li Class="CompProperties_UniqueWeapon">
+                <weaponCategories>
+                    <li>Ranged</li>
+                    <li>Gun</li>
+                    <li>DV_EnergyWeapon</li>
+                    <li>Sighted</li>
+                </weaponCategories>
+                <namerLabels>
+                    <li>light</li>
+                    <li>spewer</li>
+                    <li>peashooter</li>
+                    <li>SMG</li>
+                    <li>photon gun</li>
+                    <li>blaster</li>
+                    <li>light blaster</li>
+                    <li>pew-pew</li>
+                </namerLabels>
+            </li>
+        </comps>
+        <generateAllowChance>0</generateAllowChance>
+        <possessionCount>0</possessionCount>
+        <tradeability>Sellable</tradeability>
+        <thingSetMakerTags Inherit="False">
+            <li>RewardStandardLowFreq</li>
+            <li>UniqueWeapon</li>
+        </thingSetMakerTags>
+        <recipeMaker Inherit="False" IsNull="True" />
+        <thingCategories Inherit="False">
+            <li>WeaponsUnique</li>
+        </thingCategories>
+        <descriptionHyperlinks>
+            <ThingDef>DV_Gun_PhotonSMG</ThingDef>
+        </descriptionHyperlinks>
+    </ThingDef>
+
+
+    <ThingDef MayRequire="Ludeon.RimWorld.Odyssey" ParentName="DV_Gun_ClashHMG">
+        <defName>DV_Gun_ClashHMG_Unique</defName>
+        <label>unique clash HMG</label>
+        <description>A clash HMG with customized parts.</description>
+        <techLevel>Spacer</techLevel>
+        <graphicData>
+            <texPath>Things/Item/Equipment/WeaponRanged/UniqueWeapons/ClashHMG</texPath>
+            <graphicClass>Graphic_Random</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.2</drawSize>
+        </graphicData>
+        <comps Inherit="False">
+            <li Class="CompProperties_EquippableAbilityReloadable" />
+            <!-- Props are populated by traits -->
+            <li Class="CompProperties_Forbiddable"/>
+            <li Class="CompProperties_Styleable"/>
+            <li Class="CompProperties_Biocodable"/>
+            <li>
+                <compClass>CompQuality</compClass>
+            </li>
+            <li Class="CompProperties_Art">
+                <nameMaker>NamerArtWeaponGun</nameMaker>
+                <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+                <minQualityForArtistic>Excellent</minQualityForArtistic>
+            </li>
+            <li Class="CompProperties_UniqueWeapon">
+                <weaponCategories>
+                    <li>Ranged</li>
+                    <li>Gun</li>
+                    <li>Rifle</li>
+                    <li>Sighted</li>
+                    <li>Attachable</li>
+                </weaponCategories>
+                <namerLabels>
+                    <li>heavy</li>
+                    <li>gutter</li>
+                    <li>rainstorm</li>
+                    <li>HMG</li>
+                    <li>clash gun</li>
+                    <li>hailstorm</li>
+                    <li>hail</li>
+                    <li>leadstorm</li>
+                </namerLabels>
+            </li>
+        </comps>
+        <generateAllowChance>0</generateAllowChance>
+        <possessionCount>0</possessionCount>
+        <tradeability>Sellable</tradeability>
+        <thingSetMakerTags Inherit="False">
+            <li>RewardStandardLowFreq</li>
+            <li>UniqueWeapon</li>
+        </thingSetMakerTags>
+        <recipeMaker Inherit="False" IsNull="True" />
+        <thingCategories Inherit="False">
+            <li>WeaponsUnique</li>
+        </thingCategories>
+        <descriptionHyperlinks>
+            <ThingDef>DV_Gun_PhotonSMG</ThingDef>
+        </descriptionHyperlinks>
+    </ThingDef>
+</Defs>

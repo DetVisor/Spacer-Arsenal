@@ -41,7 +41,7 @@
                             <equippedStatOffsets Inherit="False">
                                 <MoveSpeed>-0.25</MoveSpeed>
                             </equippedStatOffsets>
-                            <soundInteract>Interact_Rifle</soundInteract>
+                            <soundInteract >Interact_Rifle</soundInteract>
                             <recipeMaker>
                                 <researchPrerequisite>ChargedShot</researchPrerequisite>
                                 <skillRequirements>

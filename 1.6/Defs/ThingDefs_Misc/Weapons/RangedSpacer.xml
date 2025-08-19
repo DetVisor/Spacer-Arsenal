@@ -456,7 +456,7 @@
     </tools>
   </ThingDef>
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef Name="DV_Gun_ClashHMG" ParentName="BaseHumanMakeableGun">
     <defName>DV_Gun_ClashHMG</defName>
     <label>clash HMG</label>
     <description>A portable heavy machine gun loaded with high-velocity ammunition. A deadly mix of accuracy and penetration, it fires fast bullets capable of piercing and shredding armor, but that do little damage by themselves.</description>
@@ -831,7 +831,7 @@
     </tools>
   </ThingDef>
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef Name="DV_Gun_BruteRifle" ParentName="BaseHumanMakeableGun">
     <defName>DV_Gun_BruteRifle</defName>
     <label>brute rifle</label>
     <description>A super-heavy assault weapon loaded with high-caliber ammunition. It exchanges speed with power, firing powerful tungsten carbide slugs that penetrate targets and destroy organs with ease.  Its weight slows down the wielder.</description>
@@ -918,7 +918,7 @@
     </tools>
   </ThingDef>
 
-  <ThingDef ParentName="BaseHumanMakeableGun">
+  <ThingDef Name="DV_Gun_PhotonSMG" ParentName="BaseHumanMakeableGun">
     <defName>DV_Gun_PhotonSMG</defName>
     <label>photon SMG</label>
     <description>A compact photon-slingshot submachine gun. Using complex sets of micro-lenses, mirrors and magnets, it compresses photon particles into blindingly fast projectiles which sear and melt flesh, but that have a hard time getting through any kind of armor. The photon blasts dissipate quickly, lowering the range of the weapon.</description>
